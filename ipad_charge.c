@@ -14,7 +14,7 @@
 #define PRODUCT_IPAD2		0x129f
 #define PRODUCT_IPAD2_3G	0x12a2
 #define PRODUCT_IPAD3		0x12a4
-#define PRODUCT_IPAD3_3G	0x12a6
+#define PRODUCT_IPAD3_4G	0x12a6
 
 #define PRODUCT_IPOD_TOUCH_2G 0x1293
 #define PRODUCT_IPHONE_3GS 0x1294
@@ -140,7 +140,7 @@ int main(int argc, char *argv[]) {
 				fprintf(stderr, "ipad_charge: failed to get device descriptor: error %d\n", ret);
 				continue;
 			}
-			if (desc.idVendor == VENDOR_APPLE && (desc.idProduct == PRODUCT_IPAD1 || desc.idProduct == PRODUCT_IPAD2 || desc.idProduct == PRODUCT_IPAD2_3G || desc.idProduct == PRODUCT_IPAD3_3G || desc.idProduct == PRODUCT_IPAD3)) {
+			if (desc.idVendor == VENDOR_APPLE && (desc.idProduct == PRODUCT_IPAD1 || desc.idProduct == PRODUCT_IPAD2 || desc.idProduct == PRODUCT_IPAD2_3G || desc.idProduct == PRODUCT_IPAD3_4G || desc.idProduct == PRODUCT_IPAD3)) {
 				if (set_charging_mode(dev, enable) < 0)
 					fprintf(stderr, "ipad_charge: error setting charge mode\n");
 				else
