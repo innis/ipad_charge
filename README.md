@@ -6,7 +6,7 @@ Supported devices:
 ------------------
 * iPad
 * iPad2
-* iPad3
+* new iPad (2012)
 * iPod Touch 2G
 * iPod Touch 3G
 * iPod Touch 4G
